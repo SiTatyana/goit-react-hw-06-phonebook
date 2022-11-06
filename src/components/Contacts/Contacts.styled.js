@@ -1,27 +1,36 @@
 import styled from '@emotion/styled';
 
-export const SearchContact = styled.div `
 
+export const ContactsList = styled.ol`
+display: flex;
+width: 370px;
+flex-direction: column;
+padding: 0;
 background-color: rgb(217, 217, 217);
 border-radius: 10px;
 border: 2px solid orange;
 `
 
-export const SearchHeader = styled.div`
+export const ContactsItem = styled.li`
 display: flex;
-padding: 20px;
-justify-content:center;
-font-weight: 700;
-color:orange;
+padding: 5px;
+font-size: 15px;
+font-weight:400px;
+
+:hover, :focus {
+    background-color: orange;
+}
+`
+export const ContactsDiv = styled.div`
+padding: 10px;
+
+:hover, :focus {
+    color: white;
+}
+`
+export const ContactsSpan = styled.span`
+margin-left: 20px;
 `
 
-export const SearchInput = styled.input `
-width: 320px;
-margin-left: 20px;
-margin-bottom: 15px;
-padding:5px;
-border: 2px solid rgb(204, 204, 204);
-border-radius: 10px;
-color: orange;
-font-weight: 700;
-`
+
+
